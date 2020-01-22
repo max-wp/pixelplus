@@ -1,0 +1,9 @@
+.vscode
+*.ai
+*.log
+*.pdf
+*.psd
+
+template/
+
+Thumbs.db
