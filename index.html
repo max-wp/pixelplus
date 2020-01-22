@@ -69,7 +69,7 @@
             <ul class="catalog-list">
                 <li class="catalog-item">
                     <p class="catalog-item__image">
-                        <img src="img/catalog-image.jpg" alt="Самый клевый чайник">
+                        <img src="img/" alt="Самый клевый чайник">
                     </p>
                     <span class="catalog-item__title">Самый клевый чайник, который надо купить!</span>
                     <p class="catalog-item__price">
@@ -120,8 +120,31 @@
             <span>компания «Пиксель Плюс»</span>
         </p>
     </footer>
-    <section class="modal">
-
+    <section class="modal-feedback">
+        
+        <form action="#" method="post">
+            <h2>Обратная связь</h2>
+            <p>
+                <label for="username">
+                    <span>Ваше имя</span>
+                    <input id="username" type="text" name="name" required>
+                </label>
+                <label for="phonenumber">
+                    <span>Телефон</span>
+                    <input id="phonenumber" type="text" name="phonenumber" required>
+                </label>
+                <label for="email">
+                    <span>Email</span>
+                    <input id="email" type="text" name="phonenumber" required>
+                </label>
+                <label for="message">
+                    <span>Сообщение</span>
+                    <textarea id="message" name="message" cols="30" rows="10"></textarea>
+                </label>
+            </p>
+            <button class="button" type="submit">Отправить</button>
+        </form>
+        <button class="modal-feedback-close" type="button">x</button>
     </section>
 </body>
 
