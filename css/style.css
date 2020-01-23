@@ -1,7 +1,6 @@
-/* Локальный шрифт для телефонных номеров */
 @font-face {
     font-family: 'open_sans_condensedlight';
-    src: url('opensanscondensed-light-webfont.woff2') format('woff2');
+    src: url('../fonts/opensanscondensed-light-webfont.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 
@@ -18,30 +17,95 @@ body {
 
 }
 
-/* Контакты в шапке */
+.container {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].vsually-hidden {
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-space: nowrap;
+
+    clip-path: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* -======== HEADER ========- */
+
+.wrapper-header {
+    width: 100%;
+    min-height: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    width: 273px;
+    height: 100px;
+}
+.header__contacts {
+    padding-bottom: 40px;
+}
+.header__contacts p {
+    margin: 0;
+    margin-top: 5px;
+    padding: 0;
+
+}
+
 .header__contacts span {
     font-family: 'open_sans_condensedlight';
     font-size: 40px;
     line-height: 46px;
 }
 
+.link-feedback {
+    text-align: right;
+}
+
 .header__contacts a {
+
     font-size: 24px;
     text-decoration: none;
 
-    color: #767676;
+    font-weight: bold;
 
-    border-bottom: 1px dashed;
+    color: #767676;
+    border-bottom: 2px dashed;
 }
 
-/* Меню в шапке */
-.header__menu {
-    font-size: 30px;
-
+/* -======== MENU ========- */
+.menu {
     background-color: #777777;
 }
 
+.wrapper-menu {
+    width: 100%;
+
+
+    font-size: 30px;
+}
+
 .site-navigation {
+    display: flex;
+    min-height: 80px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
@@ -52,109 +116,205 @@ body {
 
 .site-navigation a:hover,
 .site-navigation a:focus {
-    text-decoration: underline;
+    border-bottom: 2px solid #ffffff;
 }
 
-/* Хлебные крошки */
-.content__breadcrumbs{
+.site-navigation a::after {
+    content: "|";
+
+    position: absolute;
+    margin-left: 25px;
+}
+/* -======== SLIDER ========- */
+.slider {
+    text-align: center;
+}
+.site-navigation li:last-child a::after{
+    content:none;
+}
+/* bread crumbs */
+.breadcrumbs {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+
     line-height: 18px;
     list-style: none;
 }
-.content__breadcrumbs a {
+
+.breadcrumbs a {
+    display: block;
+    position: relative;
+    margin-right: 25px;
     color: #767676;
 }
 
-/* Левая колонка */
-.content__leftblock a{
+.breadcrumbs a::after {
+    content: "/";
+
+    position: absolute;
+    margin-left: 10px;
+}
+
+/*-========= CONTENT =========- */
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* --- LEFT BLOCK --- */
+.leftblock {
+    width: 200px;
+}
+
+.leftblock a {
     color: #767676;
 }
-.content__leftblock>ul{
+
+/* Pointers */
+.catalog-pointers {
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     line-height: 30px;
     list-style: none;
 }
-.content__leftblock>ul ul{
+
+.catalog-pointers-second {
+    padding-left: 10px;
     list-style: disc;
+
 }
-.price{
+
+.pointers-second-item {
+    padding-left: 10px;
+}
+
+.price {
     font-size: 30px;
     font-weight: bold;
     line-height: 25px;
+}
 
+/* --- CENTER BLOCK --- */
+.centerblock {
+    width: 780px;
+}
+
+
+.catalog-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+    list-style: none;
+
+}
+
+.catalog-item {
+    margin-left:15px;
+    margin-bottom:20px;
+    width: 250px;
+    height: 380px;
+    background-color: #dcdcdc;
+}
+.catalog-item:nth-child(3n+1){
+    margin-left:0;
+}
+.catalog-item-image{
     text-align: center;
 }
+.catalog-item-title {
+    padding:20px 40px 0 20px;
 
-/* Центральный блок */
-.catalog-list{
-    list-style: none;
+    font-size: 18px;
 }
-.catalog-item{
-    background-color:#dcdcdc ;
-}
-.catalog-item__price{
+.catalog-item-price {
+    padding-left: 20px;
     font-size: 28px;
     font-weight: bold;
-
 }
-/* Пагинация */
-.pagination-list{
+.catalog-item-price a{
+    position: relative;
+    left: 70px;
+}
+
+/* Pagination */
+.pagination-list {
     list-style-type: none;
 }
+
 .pagination-list a {
     color: #767676;
     text-decoration: none;
 }
 
-.pagination__item-current{
+.pagination-item-current {
     font-size: 18px;
     color: #444444;
 }
-
-.content-description{
+/* Content description */
+.content-description {
+    display:flex;
+    justify-content: space-between;
     border-top: 1px solid #777777;
 }
+.content-description-item{
+    margin:0;
+    margin-top: 30px;
+    padding:0;
 
+    width: 370px;
+}
 
-/* Подвал */
+/* -======== FOOTER ========- */
 .footer {
     color: #ffffff;
 
     background-color: #777777;
 }
-.footer__copyright a{
+
+.footer__copyright a {
     color: #ffffff;
 }
 
-.footer__developer a{
+.footer__developer a {
     color: #ffffff;
 }
-.developer-icon-logo{
+
+.developer-icon-logo {
     background-image: image();
 }
 
-/* Форма обратной связи */
-.feedback{
+/* feed back */
+.feedback {
     text-align: center;
 }
-.feedback h2{
+
+.feedback h2 {
     font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
 
     text-align: center;
 }
-  .button{
-      font: inherit;
-      font-size: 17.77px;
-      font-weight: bold;
-      text-transform: uppercase;
-      vertical-align: middle;
-      
-      color: #ffffff;
-      background-color: #777777;
-      border: none;
-  }
-  .input:invalid{
-      color:#dc7f7f;
-      border: 1px solid #ff8383;
-  }
+
+.button {
+    font: inherit;
+    font-size: 17.77px;
+    font-weight: bold;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+    color: #ffffff;
+    background-color: #777777;
+    border: none;
+}
+
+.input:invalid {
+    color: #dc7f7f;
+    border: 1px solid #ff8383;
+}
