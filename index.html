@@ -13,50 +13,53 @@
 
 <body>
     <!-- Шапка -->
-    <header class="main-header">
-        <div class="main-header__logo">
+    <header class="header">
+        <div class="header__logo">
             <img src="img/logo.png" alt="Логотип pixelplus" width="273" height="100">
         </div>
-        <div class="main-header__contacts">
-            <span>+7(499)777-77-77</span>
-            <span>+7(499)777-77-77</span>
+        <div class="header__contacts">
+            <span>+7(499)777-77-77</span><br>
+            <span>+7(499)777-77-77</span><br>
             <a href="#" class="button-feedback">Обратная связь</a>
         </div>
-        <nav class="main-header__menu">
-            <ul>
-                <li>Главная</li>
-                <li>Каталог</li>
-                <li>Доставка и оплата</li>
-                <li>Прайс-лист</li>
-                <li>Контакты</li>
+        <nav class="header__menu">
+            <ul class="site-navigation">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Прайс-лист</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- Слайдер -->
-    <div class="main-slider">
+    <div class="slider">
         <a href="#" class="prev"></a>
         <img src="img/slide-1.png" alt="Слайд-1">
         <a href="" class="next"></a>
     </div>
 
     <!-- Контент -->
-    <main class="main-content">
-        <ul class="content-breadcrumbs">
-            <li>Главная</li>
-            <li>Каталог</li>
-            <li>Бытовая техника</li>
+    <main class="content">
+        <!-- Пагинация -->
+        <ul class="content__breadcrumbs">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li class="breadcrumbs-current">Бытовая техника</li>
         </ul>
-        <section class="content-leftblock">
+
+        <!-- Левая колонка -->
+        <section class="content__leftblock">
 
             <ul>
                 <li>Автомобили</li>
-                <li> Бытовая техника
+                <li> <a href="#">Бытовая техника</a>
                     <ul>
-                        <li>Микроволновки</li>
-                        <li>Холодильники</li>
-                        <li>Посудомоечные машины</li>
-                        <li>Чайники</li>
+                        <li><a href="#">Микроволновки</a></li>
+                        <li><a href="">Холодильники</a></li>
+                        <li><a href="">Посудомоечные машины</a></li>
+                        <li><a href="">Чайники</a></li>
                     </ul>
                 </li>
                 <li>Мобильная техника</li>
@@ -64,19 +67,22 @@
                 <li>Одежда</li>
                 <li>Недвижимость</li>
             </ul>
-            <img src="MS - EXCEL.png" alt="Прайс-лист">
-            <span>Прайс-лист</span>
-
+            <div class="price">
+                <img src="img/MS - EXCEL.png" alt="Прайс-лист"><br>
+                <span>Прайс-лист</span>
+            </div>
         </section>
-        <section class="content-centerblock">
+
+        <!-- Центральный блок -->
+        <section class="content__centerblock">
             <ul class="catalog-list">
                 <li class="catalog-item">
                     <p class="catalog-item__image">
-                        <img src="img/" alt="Самый клевый чайник">
+                        <img src="img/catalog-image.jpg" alt="Самый клевый чайник">
                     </p>
                     <span class="catalog-item__title">Самый клевый чайник, который надо купить!</span>
                     <p class="catalog-item__price">
-                        <b>1900 р.</b>
+                        1900 р.
                         <a href="#"><img src="img/addtobasket_mini.png" alt="Корзина"></a>
                     </p>
                 </li>
@@ -84,7 +90,7 @@
             <ul class="pagination-list">
                 <li class="pagination__item"> <a href="#">1</a> </li>
                 <li class="pagination__item"> <a href="#">2</a> </li>
-                <li class="pagination__item"> <a href="#">3</a> </li>
+                <li class="pagination__item-current">3 </li>
                 <li class="pagination__item"> <a href="#">4</a> </li>
                 <li class="pagination__item"> <a href="#">5</a> </li>
                 <li class="pagination__item"> <a href="#">6</a> </li>
@@ -104,17 +110,17 @@
         </section>
 
     </main>
-    <footer class="main-footer">
+    <footer class="footer">
         <p class="footer__copyright">@ 2012-2013 ЗАО "Компания"
             <a href="mailto:info@name.ru">info@name.ru</a>
         </p>
-        <p class="footer_menu">
-            <ul>
-                <li>Главная</li>
-                <li>Каталог</li>
-                <li>Доставка и оплата</li>
-                <li>Прайс-лист</li>
-                <li>Контакты</li>
+        <p class="footer__menu">
+            <ul class="site-navigation">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Доставка и оплата</a></li>
+                <li><a href="#">Прайс-лист</a></li>
+                <li><a href="#">Контакты</a></li>
             </ul>
         </p>
         <p class="footer__developer">
@@ -123,8 +129,8 @@
             <span>компания «Пиксель Плюс»</span>
         </p>
     </footer>
-    <section class="modal-feedback">
-        
+    <section class="feedback">
+
         <form action="#" method="post">
             <h2>Обратная связь</h2>
             <p>
@@ -147,7 +153,7 @@
             </p>
             <button class="button" type="submit">Отправить</button>
         </form>
-        <button class="modal-feedback-close" type="button">x</button>
+        <button class="feedback-close" type="button">x</button>
     </section>
 </body>
 

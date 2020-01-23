@@ -12,10 +12,124 @@ body {
     padding: 0;
 
     font-family: 'PT Sans', Arial, sans-serif;
-    font-size: 18px;
-    color:#767676;
+    font-size: 14px;
+    line-height: 22px;
+    color: #767676;
 
 }
-.main-header__contacts span{
+
+/* Контакты в шапке */
+.header__contacts span {
     font-family: 'open_sans_condensedlight';
+    font-size: 40px;
+    line-height: 46px;
+}
+
+.header__contacts a {
+    font-size: 24px;
+    text-decoration: none;
+
+    color: #767676;
+
+    border-bottom: 1px dashed;
+}
+
+/* Меню в шапке */
+.header__menu {
+    font-size: 30px;
+
+    background-color: #777777;
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    text-decoration: underline;
+}
+
+/* Хлебные крошки */
+.content__breadcrumbs{
+    line-height: 18px;
+    list-style: none;
+}
+.content__breadcrumbs a {
+    color: #767676;
+}
+
+/* Левая колонка */
+.content__leftblock a{
+    color: #767676;
+}
+.content__leftblock>ul{
+    font-size: 18px;
+    line-height: 30px;
+    list-style: none;
+}
+.content__leftblock>ul ul{
+    list-style: disc;
+}
+.price{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 25px;
+
+    text-align: center;
+}
+
+/* Центральный блок */
+.catalog-list{
+    list-style: none;
+}
+.catalog-item{
+    background-color:#dcdcdc ;
+}
+.catalog-item__price{
+    font-size: 28px;
+    font-weight: bold;
+
+}
+/* Пагинация */
+.pagination-list{
+    list-style-type: none;
+}
+.pagination-list a {
+    color: #767676;
+    text-decoration: none;
+}
+
+.pagination__item-current{
+    font-size: 18px;
+    color: #444444;
+}
+
+.content-description{
+    border-top: 1px solid #777777;
+}
+
+
+/* Подвал */
+.footer {
+    color: #ffffff;
+
+    background-color: #777777;
+}
+.footer__copyright a{
+    color: #ffffff;
+}
+
+.footer__developer a{
+    color: #ffffff;
+}
+
+/* Форма обратной связи */
+.feedback{
+
 }
