@@ -128,8 +128,33 @@ body {
 .footer__developer a{
     color: #ffffff;
 }
+.developer-icon-logo{
+    background-image: image();
+}
 
 /* Форма обратной связи */
 .feedback{
-
+    text-align: center;
 }
+.feedback h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    text-align: center;
+}
+  .button{
+      font: inherit;
+      font-size: 17.77px;
+      font-weight: bold;
+      text-transform: uppercase;
+      vertical-align: middle;
+      
+      color: #ffffff;
+      background-color: #777777;
+      border: none;
+  }
+  .input:invalid{
+      color:#dc7f7f;
+      border: 1px solid #ff8383;
+  }
