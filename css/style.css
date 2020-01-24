@@ -57,6 +57,9 @@ input[type="radio"].vsually-hidden {
     border: none;
 }
 /* -======== HEADER ========- */
+.header{
+    background-color: #dcdcdc;
+}
 
 .wrapper-header {
     width: 100%;
