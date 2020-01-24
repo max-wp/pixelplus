@@ -196,6 +196,7 @@ input[type="radio"].vsually-hidden {
 .catalog-pointers {
     margin: 0;
     padding: 0;
+    margin-bottom: 110px;
     font-size: 18px;
     line-height: 30px;
     list-style: none;
@@ -212,6 +213,7 @@ input[type="radio"].vsually-hidden {
 }
 
 .price {
+    text-align: center;
     font-size: 30px;
     font-weight: bold;
     line-height: 25px;
@@ -226,6 +228,7 @@ input[type="radio"].vsually-hidden {
 .catalog-list {
     margin: 0;
     padding: 0;
+    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
 
@@ -268,6 +271,12 @@ input[type="radio"].vsually-hidden {
 
 /* Pagination */
 .pagination-list {
+    margin:0;
+    margin-bottom: 65px;
+    margin-left: -20px;
+    padding:0;
+
+    text-align: center;
     list-style-type: none;
 }
 
@@ -275,7 +284,10 @@ input[type="radio"].vsually-hidden {
     color: #767676;
     text-decoration: none;
 }
-
+.pagination-item,.pagination-item-current {
+    display:inline;
+    margin-left: 20px;
+}
 .pagination-item-current {
     font-size: 18px;
     color: #444444;
