@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    
     <!-- -======== HEADER ========- -->
     <header class="header">
         <div class="container">
@@ -34,6 +35,7 @@
             </div>
         </div>
     </header>
+
     <!-- -======== MENU ========- -->
     <div class="menu">
         <div class="container">
@@ -67,9 +69,9 @@
             </ul>
 
             <div class="content-wrapper">
+
                 <!-- --- LEFT BLOCK --- -->
                 <section class="leftblock">
-
                     <ul class="catalog-pointers">
                         <li>Автомобили</li>
                         <li> <a href="#">Бытовая техника</a>
@@ -158,6 +160,7 @@
 
                         </li>
                     </ul>
+
                     <!-- Pagination -->
                     <ul class="pagination-list">
                         <li class="pagination__item"> <a href="#">1</a> </li>
@@ -169,74 +172,94 @@
                         <li class="pagination__item"> <a href="#">7</a> </li>
                     </ul>
                     <div class="content-description">
-                        <p class="content-description-item">Компания «Пиксель Плюс» существует более 6 лет, за это время мы принимали участие в
+                        <p class="content-description-item">Компания «Пиксель Плюс» существует более 6 лет, за это время
+                            мы принимали участие в
                             разработке более
                             чем 700 сайтов, поэтому можем уверенно называть себя профессионалами. На данный момент наш
                             коллектив
                             состоит из более чем 30 сотрудников работающих в двух офисах в Москве и
                             Зеленограде.характерные для
                             этого жанра мотивы: неразделённой любви, ухода молодости, угасания души. </p>
-                        <p class="content-description-item">Одним из основных направлений работ нашей компании является поисковое продвижение сайтов, на
+                        <p class="content-description-item">Одним из основных направлений работ нашей компании является
+                            поисковое продвижение сайтов, на
                             данной
                             момент мы работаем с более чем 150 постоянными клиентами по более чем 11 000 поисковым
                             запросам. При
                             этом в работе основной акцент мы делаем на качестве работ, а так же применяем собственные
                             уникальные
                             разработки в области SEO продвижения. На данный момент отдел SEO состоит из 9 человек под
-                            руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</p class="content-description-item">
+                            руководством ведущего специалиста, преимущественно работающих в нашем московском офисе.</p
+                            class="content-description-item">
                     </div>
                 </section>
             </div>
         </div>
-
     </main>
+
     <!-- -======== FOOTER ========- -->
     <footer class="footer">
-        <p class="footer__copyright">@ 2012-2013 ЗАО "Компания"
-            <a href="mailto:info@name.ru">info@name.ru</a>
-        </p>
-        <p class="footer__menu">
-            <ul class="site-navigation-footer">
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Доставка и оплата</a></li>
-                <li><a href="#">Прайс-лист</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-        </p>
-        <p class="footer__developer">
-            <span class="developer-icon-logo"></span>
-            <a href="#">Разработка сайта</a>
-            <span>компания «Пиксель Плюс»</span>
-        </p>
-    </footer>
-    <!-- feed back -->
-    <section class="feedback">
+        <div class="container">
+            <div class="wrapper-footer">
+                <p class="footer-copyright">@ 2012-2013 ЗАО «Компания»<br>
+                    <a href="mailto:info@name.ru">info@name.ru</a>
+                </p>
 
+                <div class="footer-menu">
+                    <ul class="site-navigation-footer">
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Доставка и оплата</a></li>
+                        <li><a href="#">Прайс-лист</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-developer">
+                    <span class="developer-icon-logo"></span>
+                    <a href="#">Разработка сайта - </a> <br>
+                    <span>компания «Пиксель Плюс»</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- feed back -->
+    <section class="modal modal-feedback">
+        <button class="modal-close">Закрыть</button>
         <form action="#" method="post">
             <h2>Обратная связь</h2>
+
             <p>
                 <label for="username">
-                    <span>Ваше имя *</span>
+                    <span>Ваше имя *</span><br>
                     <input id="username" type="text" name="name" required>
                 </label>
+            </p>
+            <p>
                 <label for="phonenumber">
-                    <span>Телефон *</span>
+                    <span>Телефон *</span><br>
                     <input id="phonenumber" type="text" name="phonenumber" required>
                 </label>
+            </p>
+            <p>
                 <label for="email">
-                    <span>Email *</span>
+                    <span>Email *</span><br>
                     <input id="email" type="text" name="phonenumber" required>
                 </label>
+            </p>
+            <p>
                 <label for="message">
-                    <span>Сообщение</span>
+                    <span>Сообщение</span><br>
                     <textarea id="message" name="message" cols="30" rows="10"></textarea>
                 </label>
             </p>
+
             <button class="button" type="submit">Отправить</button>
         </form>
-        <button class="feedback-close" type="button">x</button>
+
     </section>
+
+    <script src="js/script.js"></script>
 </body>
 
 </html>
