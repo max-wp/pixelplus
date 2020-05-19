@@ -1,6 +1,6 @@
 <h1>Тестовое задание в компанию pixelplus.ru</h1>
 <h3>Ссылки на материалы:</h3>
-<a href="http://test-pixel.web-prost.ru/">Просмотр выполненной работы</a>
+
 <p>PSD - <a href="http://www.pixelplus.ru/test/lvl3/pixelplus.ru-test-v3.jpg">http://www.pixelplus.ru/test/lvl3/pixelplus.ru-test-v3.psd</a></p>
 <p>JPG - <a href="http://www.pixelplus.ru/test/lvl3/pixelplus.ru-test-v3.jpg">http://www.pixelplus.ru/test/lvl3/pixelplus.ru-test-v3.jpg</a></p>
 <h3>Тестовое задание содержит:</h3>
